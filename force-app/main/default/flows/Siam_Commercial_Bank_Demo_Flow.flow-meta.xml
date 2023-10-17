@@ -64,6 +64,9 @@
         <label>Low Risk?</label>
         <locationX>182</locationX>
         <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity_with_Risk_Rating</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
@@ -109,6 +112,19 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity_with_Risk_Rating</name>
+        <label>Update Opportunity with Risk Rating</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>OppRisk</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
         <locationX>56</locationX>
         <locationY>0</locationY>
