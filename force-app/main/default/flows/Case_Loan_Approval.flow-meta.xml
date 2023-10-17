@@ -16,7 +16,7 @@
             <actionType>stepInteractive</actionType>
             <assignees>
                 <assignee>
-                    <stringValue>swong+u1+48@copado.com.cedev1</stringValue>
+                    <stringValue>{!Environment.approverUsername}</stringValue>
                 </assignee>
                 <assigneeType>User</assigneeType>
             </assignees>
