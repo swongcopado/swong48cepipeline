@@ -20,6 +20,9 @@
                 <elementReference>Approved_Amount</elementReference>
             </value>
         </assignmentItems>
+        <connector>
+            <targetReference>DEV4_Label</targetReference>
+        </connector>
     </assignments>
     <choices>
         <name>Approved</name>
@@ -99,6 +102,39 @@
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
+    <screens>
+        <name>DEV4_Label</name>
+        <label>DEV4 Label</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>DEV4_Label_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>DEV4_Label_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>DEV4Change</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Chnage introduced in DEV4&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -106,7 +142,7 @@
             <targetReference>Approval_Form</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>ApprovalStatus</name>
         <dataType>String</dataType>
