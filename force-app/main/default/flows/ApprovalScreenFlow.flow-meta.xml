@@ -21,7 +21,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>DEV4_Label</targetReference>
+            <targetReference>DEV4_Screen</targetReference>
         </connector>
     </assignments>
     <choices>
@@ -103,22 +103,22 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>DEV4_Label</name>
-        <label>DEV4 Label</label>
+        <name>DEV4_Screen</name>
+        <label>DEV4 Screen</label>
         <locationX>176</locationX>
         <locationY>350</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <fields>
-            <name>DEV4_Label_Section1</name>
+            <name>DEV4_Screen_Section1</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>DEV4_Label_Section1_Column1</name>
+                <name>DEV4_Screen_Section1_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>DEV4Change</name>
-                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Chnage introduced in DEV4&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Change introduced in DEV4﻿&lt;/strong&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
