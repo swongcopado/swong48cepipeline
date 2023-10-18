@@ -21,7 +21,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>DEV2_Special_Approval</targetReference>
+            <targetReference>DEV2_Even_More_Special_Approval</targetReference>
         </connector>
     </assignments>
     <choices>
@@ -103,8 +103,8 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>DEV2_Special_Approval</name>
-        <label>DEV2 Special Approval</label>
+        <name>DEV2_Even_More_Special_Approval</name>
+        <label>DEV2 Even More Special Approval</label>
         <locationX>176</locationX>
         <locationY>350</locationY>
         <allowBack>true</allowBack>
