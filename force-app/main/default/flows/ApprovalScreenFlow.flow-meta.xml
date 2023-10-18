@@ -21,7 +21,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>DEV1_Addition</targetReference>
+            <targetReference>DEV2_Special_Approval</targetReference>
         </connector>
     </assignments>
     <choices>
@@ -103,35 +103,13 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>DEV1_Addition</name>
-        <label>DEV1 Addition</label>
+        <name>DEV2_Special_Approval</name>
+        <label>DEV2 Special Approval</label>
         <locationX>176</locationX>
         <locationY>350</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
-        <fields>
-            <name>DEV1_Addition_Section1</name>
-            <fieldType>RegionContainer</fieldType>
-            <fields>
-                <name>DEV1_Addition_Section1_Column1</name>
-                <fieldType>Region</fieldType>
-                <fields>
-                    <name>DEV1TextLabel</name>
-                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;DEV1 and DEV4 added this&lt;/span&gt;&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                </fields>
-                <inputParameters>
-                    <name>width</name>
-                    <value>
-                        <stringValue>12</stringValue>
-                    </value>
-                </inputParameters>
-                <isRequired>false</isRequired>
-            </fields>
-            <isRequired>false</isRequired>
-            <regionContainerType>SectionWithoutHeader</regionContainerType>
-        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
