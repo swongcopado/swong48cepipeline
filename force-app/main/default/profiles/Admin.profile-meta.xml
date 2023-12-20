@@ -7,6 +7,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ExpenseTriggerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AccountAutomations</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -15,15 +19,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ContactOperations</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ContactOperationsTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpenseTriggerTest</apexClass>
+        <apexClass>ContactOperations</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -59,6 +59,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Story354__c.Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Story354__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Trip__c.Approved_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -77,6 +87,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LoanObject__c-LoanObject Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Story354__c-Story354 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Trip__c-Trip Layout</layout>
@@ -102,6 +115,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>LoanObject__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Story354__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
