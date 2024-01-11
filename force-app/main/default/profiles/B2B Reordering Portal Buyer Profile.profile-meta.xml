@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
-      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>standard__LightningSales</application>
         <default>false</default>
@@ -68,26 +67,7 @@
         <field>Expense__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object1__c.Date__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object1__c.Email__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object2__c.Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object2__c.Summary__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Trip__c.Approved_By__c</field>
@@ -110,15 +90,9 @@
         <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Story336Object1__c-Story336Object1 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Story336Object2__c-Story336Object2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Trip__c-Trip Layout</layout>
     </layoutAssignments>
-    <loginHours n1:nil="true" />
+    <loginHours n1:nil="true"></loginHours>
     <userLicense>Customer Community</userLicense>
     <userPermissions>
         <enabled>true</enabled>
