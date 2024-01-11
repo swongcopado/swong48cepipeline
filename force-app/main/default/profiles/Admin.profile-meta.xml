@@ -61,16 +61,6 @@
     </fieldPermissions>
     
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object2__c.Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object2__c.Summary__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Story354__c.Date__c</field>
         <readable>true</readable>
@@ -102,9 +92,6 @@
         <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Story336Object2__c-Story336Object2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Story354__c-Story354 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -122,15 +109,6 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Expense__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Story336Object2__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
