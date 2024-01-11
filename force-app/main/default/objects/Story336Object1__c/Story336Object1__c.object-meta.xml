@@ -159,7 +159,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Story336Object1s</pluralLabel>
-    <searchLayouts />
+    <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
