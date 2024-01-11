@@ -70,16 +70,6 @@
     
     <fieldPermissions>
         <editable>false</editable>
-        <field>Story336Object2__c.Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Story336Object2__c.Summary__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Trip__c.Approved_By__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -98,9 +88,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Expense__c-Expense Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Story336Object2__c-Story336Object2 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Trip__c-Trip Layout</layout>
