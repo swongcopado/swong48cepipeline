@@ -4,7 +4,7 @@
         <name>Send_Notification_Email</name>
         <label>Send Notification Email</label>
         <locationX>50</locationX>
-        <locationY>647</locationY>
+        <locationY>839</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -40,14 +40,14 @@
             <operator>Assign</operator>
         </assignmentItems>
         <connector>
-            <targetReference>Calculate_Risk</targetReference>
+            <targetReference>Just_some_random_loop</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Calculate_Risk</name>
         <label>Calculate Risk</label>
         <locationX>182</locationX>
-        <locationY>431</locationY>
+        <locationY>623</locationY>
         <assignmentItems>
             <assignToReference>OppRiskValue</assignToReference>
             <operator>Assign</operator>
@@ -63,9 +63,9 @@
         <name>Low_Risk</name>
         <label>Low Risk?</label>
         <locationX>182</locationX>
-        <locationY>539</locationY>
+        <locationY>731</locationY>
         <defaultConnector>
-            <targetReference>Update_Opportunity_with_Risk_Rating</targetReference>
+            <targetReference>Update_Opportunity_with_Low_Risk_Indicator</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -84,6 +84,7 @@
             <label>Yes</label>
         </rules>
     </decisions>
+    <description>Version 2 with Low Risk Indicator Update - Implemented in Dev1</description>
     <environments>Default</environments>
     <formulas>
         <name>OppRisk</name>
@@ -93,6 +94,17 @@
     </formulas>
     <interviewLabel>Siam Commercial Bank Demo Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Siam Commercial Bank Demo Flow</label>
+    <loops>
+        <name>Just_some_random_loop</name>
+        <label>Just some random loop</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <collectionReference>Some_Random_Collection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <noMoreValuesConnector>
+            <targetReference>Calculate_Risk</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -113,14 +125,14 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <name>Update_Opportunity_with_Risk_Rating</name>
-        <label>Update Opportunity with Risk Rating</label>
+        <name>Update_Opportunity_with_Low_Risk_Indicator</name>
+        <label>Update Opportunity with Low Risk Indicator</label>
         <locationX>314</locationX>
-        <locationY>647</locationY>
+        <locationY>839</locationY>
         <inputAssignments>
             <field>Description</field>
             <value>
-                <elementReference>OppRisk</elementReference>
+                <elementReference>OppRiskValue</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
@@ -157,5 +169,12 @@
         <value>
             <numberValue>1000000.0</numberValue>
         </value>
+    </variables>
+    <variables>
+        <name>Some_Random_Collection</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
 </Flow>
